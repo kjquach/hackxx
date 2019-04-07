@@ -26,7 +26,7 @@ We used an external file of javascript and incorporated it into our html file. W
 - include more in-depth resources
 - create levels of difficulty to cater to audiences with different computing backgrounds
 
-## Credits:
+## Credits
 Jacquelyn Ford Morie
 
 
