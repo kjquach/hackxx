@@ -1,0 +1,147 @@
+<html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
+
+
+<head>
+  <title> Project Idea Generator </title>
+</head>
+
+<body style="background-image: linear-gradient(to bottom right, #49C6EA, #8A4BB0)">
+    <h1 style="font-family: 'Courier New'">Generator</h1>
+    <div class="jumbotron jumbotron-fluid" style="padding-top: 60px; padding-bottom: 60px; font-family: 'Courier New'; background-color: black; opacity: 0.7; color: white">
+        <h1 style="font-size: 50px">Create</h1>
+        
+        <div id="ideaGenerate" style="text-align: center; font-size: 50px; text-decoration: underline">_______</div>
+    
+        <h1 style="font-size: 50px; font-weight: normal">that</h1>
+        
+        <div id="topicGenerate" style="text-align: center; font-size: 50px; text-decoration: underline">___________________</div>
+    
+        <div style="display: flex; justify-content: center; margin: 15px">
+            <button id="generate" type="button" class="btn btn-secondary" style="margin: 15px" onclick="getGenre(); getIdea();">Generate an idea!</button>
+            <button type="button" class="btn btn-secondary" style="margin: 15px" onclick="startScroll();">Getting Started</button>
+        </div>
+    </div>
+
+    
+        <div id="vrarticles" style="margin: 30px">
+            <h2 style="margin: 20px; font-size: 50px">Getting Started with VR</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Getting Started with VR Development</h4>
+                        <p class="card-text">To get started with the basics of VR development in Unity, you’ll need to ensure your hardware and software is set up as described in the previous article...</p>
+                        <a href="https://unity3d.com/learn/tutorials/topics/xr/getting-started-vr-development" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Introduction to Unity VR Development</h4>
+                        <p class="card-text">The virtual reality (VR) market has been taking giant steps in the last couple of years. The VR industry is now backed by giants like Facebook, Microsoft, and Samsung...</p>
+                        <a href="https://developer.oculus.com/documentation/unity/latest/concepts/unity-tutorial/" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial: Build Your First VR App</h4>
+                        <p class="card-text">This short tutorial walks you through creating and running a simple Unity app for Rift or Gear VR. When you finish, you will have a working VR application that you can play on...</p>
+                        <a href="https://simpleprogrammer.com/unity-vr-development/" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin: 50px; background-image: url(morie-bg-cropped3.jpg); background-repeat: no-repeat; background-size: cover">
+                <h2 style="padding: 30px; font-size: 50px"> 
+                    <img src="jacki_morie.jpg" style="border-radius: 50%; height: 250px; width: 250px; float: left; margin-right: 30px">
+                    Dr. Jacquelyn Ford Morie
+                    <p style="font-size: 25px; text-align: justify; margin: 15px">Dr. Jacquelyn Ford Morie is known for her contributions to virtual reality. Throughout her career, she has expanded VR open space, created a simulation of Mars exploration for NASA, worked on virtual reality worlds to elicit emotional responses, and more. She helped shape what virtual reality has become through her research, along with her mentorship in the Toy Scouts program.</p>
+                </h2>
+            </div>
+        </div>
+    
+    
+    <div id="webarticles" style="margin: 30px">
+        <h2 style="margin: 20px; font-size: 50px">Getting Started with Web Development</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">HTML5 Tutorial</h4>
+                    <p class="card-text">With HTML you can create your own Website. This tutorial teaches you everything about HTML. HTML is easy to learn - You will enjoy it...</p>
+                    <a href="https://www.w3schools.com/html/" target="_blank">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Make a Website</h4>
+                    <p class="card-text">Explore HTML & CSS fundamentals as you build a website in this introductory web development course...</p>
+                    <a href="https://www.codecademy.com/learn/make-a-website" target="_blank">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">How TO - Build a Website</h4>
+                    <p class="card-text">Learn how to create a fast and awesome responsive website that will work on all devices, PC, laptop, tablet, and phone...</p>
+                    <a href="https://www.w3schools.com/howto/howto_website.asp" target="_blank">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin: 50px; background-image: url(selene-newbg-cropped.jpg); background-repeat: no-repeat; background-size: cover">
+                <h2 style="padding: 30px; font-size: 50px"> 
+                    <img src="selene-cropped.jpg" style="border-radius: 50%; height: 250px; width: 250px; float: left; margin-right: 30px">
+                    Selene M. Bowlby
+                    <p style="font-size: 25px; text-align: justify; margin: 15px">Selene M. Bowlby is a web designer who specializes in creating custom websites for industries. She taught herself web design and expanded her career; she eventually started iDesignStudios in 2001.</p>
+                    <p style="font-size: 25px; text-align: center"><a href="https://www.idesignstudios.com/portfolio/">https://www.idesignstudios.com/portfolio/</a></p>
+                </h2>
+            </div>
+    </div>
+
+    
+    <div id="apparticles" style="margin: 30px">
+        <h2 style="margin: 20px; font-size: 50px">Getting Started with Mobile Apps</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Build your first app</h4>
+                    <p class="card-text">The following pages teach you how to build a simple Android app. You’ll learn how to create a "Hello World" project with Android Studio...</p>
+                    <a href="https://developer.android.com/training/basics/firstapp" target="_blank">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Jump Right In</h4>
+                    <p class="card-text">Start Developing iOS Apps (Swift) is the perfect starting point for learning to create apps that run on iPhone and iPad. View this...</p>
+                    <a href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/" target="_blank">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">How to Create an Android App for Beginners</h4>
+                    <p class="card-text">If you’ve ever thought about creating a mobile application but chose to set those thoughts aside for some reason, dust off...</p>
+                    <a href="https://www.wikihow.tech/Create-an-Android-App-for-Beginners" target="_blank">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin: 50px; background-image: url(bsafe-map-cropped2.jpg); background-repeat: no-repeat; background-size: cover">
+                <h2 style="padding: 30px; font-size: 50px;"> 
+                    <img src="silje_vallestad.png" style="border-radius: 50%; height: 250px; width: 250px; float: left; margin-right: 30px">
+                    Silje Vallestad
+                    <p style="font-size: 25px; text-align: justify; margin: 15px">Siljie Vallestad is the founder of bSafe, a multi-award winning tracker app dedicated to addressing personal safety. She received the Norwegian Female Entrepreneur of the Year and the European Ambassador for Female Entrepreneurship for her contributions.</p>
+                </h2>
+            </div>
+    </div>
+    
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+</body>
+
+<footer>
+    
+</footer>
+    
+</html>

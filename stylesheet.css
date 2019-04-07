@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-size: 90px;
+}
+
+h2 {
+    text-align: center;
+    font-family: ;
+}
+
+h4 {
+    font-family: ;
+    font-weight: bold;
+}
+
+p {
+    font-family: ;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: ;
+}
+
+div {
+    align-content: center;
+}
+
+div.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
